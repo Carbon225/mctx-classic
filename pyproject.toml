@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "mctx-classic"
+version = "0.1.0"
+description = ""
+authors = ["Jakub Karbowski <carbon225@proton.me>"]
+license = "MIT"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mctx = "^0.0.2"
+ipykernel = "^6.23.1"
+ipywidgets = "^8.0.6"
+jax = {extras = ["cpu"], version = "^0.4.10"}
+chex = "^0.1.7"
+rich = "^13.3.5"
+matplotlib = "^3.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+urllib3 = "<2.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
